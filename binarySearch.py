@@ -4,7 +4,7 @@ def binary_Search(arr,target):
     start = 0
     end = len(arr)-1
     while start<=end:
-        mid=(start+end)//2
+        mid=(start+end)//2  # we can also write mid = start + (end-start)//2 beacuse to prevent from overflow 
         if target>arr[mid]:
             start=mid+1
         if target<arr[mid]:
